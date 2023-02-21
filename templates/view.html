@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<h1 style="text-align: center">View Page</h1>
+{% if details|length < 1 %} <h4 style="text-align: center">There are no contacts. Create one!</h4>
+    <a href="/create"><input type="button" value="Create Contact" class="btn btn-primary"></a>
+
+    {% else %}
+    {% for d in details %}
+    <div class="row my-3 mx-0  border border-primary rounded">
+        <div class="col-8 mt-1 country-info">
+            <p class="my-1">{{ d.name }}</p>
+            <p class="my-1">{{ d.mail }}</p>
+            <p class="my-1">{{ d.number }}</p>
+            <a href="/delete/{{ d.id }}"><input type="submit" value="Delete" class="btn btn-primary mx-0 my-2"></a>
+            <a href="/update/{{ d.id }}"><input type="submit" value="Update" class="btn btn-primary mx-2 my-2"></a>
+        </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% endblock %}

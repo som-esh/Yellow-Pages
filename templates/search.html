@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Search Contact</h1>
+
+    <form action="/search" method="POST">
+        <input type="text" name="name" id="name" class="form-control me-2" placeholder="Name" aria-label="Search">
+        <br>
+        <input type="text" name="mail" id="mail" class="form-control me-2" placeholder="Mail" aria-label="Search">
+        <br>
+        <input type="submit" value="Search Contact" class="btn btn-primary">
+        <br>
+    </form>
+</div>
+{% endblock %}

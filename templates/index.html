@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Yellow Pages</h1>
+    {% if tasks|length > 1 %}
+    <h4 style="text-align: center">There are no contacts. Create one!</h4>
+    <input type="button" style="text-align: center" value="Create Contact" class="btn btn-primary">
+    {% else %}
+            <div class="col-8 mt-1 country-info">
+                <p class="my-0"></p>
+                <p class="my-0"></p>    
+            </div>
+    <div id="display_container"></div>
+    <a href="/create"><input type="button" value="Create Contact"
+            class="btn btn-primary"></a>
+    <a href="/view"><input type="button" value="View Contact" class="btn btn-primary"></a>
+    <a href="/search"><input type="button" value="Search Contact" class="btn btn-primary"></a>
+    {% endif %}
+
+</div>
+{% endblock %}

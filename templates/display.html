@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center">Display Contact</h1>
+
+        <input type="text" name="name" id="name" class="form-control me-2" placeholder="Name" aria-label="Search"
+            value="{{ details.name }}">
+        <br>
+        <input type="text" name="mail" id="mail" class="form-control me-2" placeholder="Mail" aria-label="Search"
+            value="{{ details.mail }}">
+        <br>
+        <input type="text" name="number" id="number" class="form-control me-2" placeholder="Number" aria-label="Search"
+            value="{{ details.number }}">
+        <br>
+
+</div>
+{% endblock %}

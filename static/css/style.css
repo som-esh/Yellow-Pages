@@ -1,0 +1,40 @@
+body,
+html {
+    margin: 0;
+    font-family: sans-serif;
+    height: 100%;
+    background-color: aliceblue;
+}
+
+body {
+    min-height: 100%;
+}
+
+.content {
+    margin: 0 auto;
+    width: 400px;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+button {
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+
+}
+
+#content {
+    width: 60%;
+    height: 60%;
+}
+
+html,
+body {
+    height: 100%;
+}
+h1 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
